@@ -30,6 +30,7 @@ Esses recursos foram implementados além do escopo proposto no desafio original:
 - 🕒 Registro com data e hora de cada conversão (utilizando java.time)
 - 💬 Saída formatada com clareza para facilitar a leitura no terminal
 - ✚ Suporte expandido para mais moedas (Euro e Iene Japonês)
+- 💥 + 4 Opções de resolução do desafio 
 
 ---
 
