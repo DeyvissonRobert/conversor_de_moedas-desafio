@@ -102,3 +102,9 @@ Obrigado também a todos que dedicarem um tempo para ver, testar ou dar feedback
 
 📫 Fique à vontade para contribuir, sugerir melhorias ou entrar em contato!
 
+---
+
+### 🏅 Badge do Projeto
+
+![Badge - Conversor de Moedas](https://github.com/DeyvissonRobert/conversor_de_moedas-desafio/blob/master/Badge-Conversor.png)
+
