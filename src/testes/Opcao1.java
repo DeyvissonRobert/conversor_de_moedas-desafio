@@ -1,4 +1,4 @@
-package moedas;
+package testes;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 

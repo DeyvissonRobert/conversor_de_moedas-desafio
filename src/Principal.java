@@ -1,5 +1,3 @@
-package moedas;
-
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -8,7 +6,7 @@ import java.net.http.HttpResponse;
 import java.util.*; // importa List, Map, Scanner etc.
 import com.google.gson.*; // importa classes para ler JSON
 
-public class Opcao4 {
+public class Principal {
         public static void main(String[] args) throws Exception {
 
             Scanner scanner = new Scanner(System.in); // cria leitor de entrada do usuário
