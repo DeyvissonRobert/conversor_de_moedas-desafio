@@ -4,64 +4,76 @@ Este é um projeto Java desenvolvido como parte do programa Oracle Next Educatio
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades principais
 
-- Conversão entre **6 moedas diferentes**:
-  - USD (Dólar americano)
-  - BRL (Real brasileiro)
-  - ARS (Peso argentino)
-  - CLP (Peso chileno)
-  - COP (Peso colombiano)
-  - BOB (Boliviano boliviano)
+- Conversão entre **8 moedas**:
+  - USD – Dólar americano
+  - BRL – Real brasileiro
+  - ARS – Peso argentino
+  - BOB – Boliviano
+  - CLP – Peso chileno
+  - COP – Peso colombiano
+  - EUR – Euro
+  - JPY – Iene japonês
 
-- Requisição de dados em tempo real utilizando a API [ExchangeRate API](https://www.exchangerate-api.com/)
-- Interface de linha de comando com menu interativo
-- Conversão entre **todas as combinações possíveis das moedas acima**
-- Formatação amigável dos resultados no terminal
+- Requisição de taxas de câmbio em tempo real via [ExchangeRate API](https://www.exchangerate-api.com/)
+- Menu interativo no terminal
+- Conversão entre todas as combinações possíveis das moedas acima
+
+---
+
+## 🌟 Funcionalidades extras implementadas
+
+Esses recursos foram implementados além do escopo proposto no desafio original:
+
+- 📜 Histórico de conversões realizadas durante a sessão
+- 🕒 Registro com data e hora de cada conversão (utilizando java.time)
+- 💬 Saída formatada com clareza para facilitar a leitura no terminal
+- ✚ Suporte expandido para mais moedas (Euro e Iene Japonês)
 
 ---
 
 ## 🛠 Tecnologias utilizadas
 
 - Java 17+
-- Biblioteca `Gson` (Google) para tratar JSON
-- `HttpClient` nativo para chamadas à API
-- API de câmbio: [https://www.exchangerate-api.com](https://www.exchangerate-api.com)
+- Gson (Google) para manipulação de JSON
+- API ExchangeRate para taxas de câmbio
+- HttpClient nativo do Java para chamadas HTTP
+- java.time para registro de logs e histórico
+- Terminal interativo com Scanner
 
 ---
 
-## 💻 Exemplo no terminal
+## 💻 Exemplo de execução no terminal
 
 ```bash
-===== CONVERSOR DE MOEDAS =====
-
+======= CONVERSOR DE MOEDAS =======
 Escolha a moeda de origem:
-1 - USD
-2 - BRL
-3 - ARS
-4 - CLP
-5 - COP
-6 - BOB
+1 - USD (Dólar Americano)
+2 - BRL (Real Brasileiro)
+3 - ARS (Peso Argentino)
+4 - BOB (Boliviano)
+5 - CLP (Peso Chileno)
+6 - COP (Peso Colombiano)
+7 - EUR (Euro)
+8 - JPY (Iene Japonês)
 0 - Sair
--------------------------------
-Digite a opção: 1
+Opção: 1
 
-Agora escolha a moeda de destino:
-1 - USD
-2 - BRL
-3 - ARS
-4 - CLP
-5 - COP
-6 - BOB
--------------------------------
-Digite a opção: 2
+Escolha a moeda de destino:
+2 - BRL (Real Brasileiro)
+...
 
 Digite o valor que deseja converter: 100
 
 ==============================
   100.00 [USD] -> 546.00 [BRL]
-  Dólar americano para Real brasileiro
+  Dólar Americano para Real Brasileiro
 ==============================
+
+==== HISTÓRICO DE CONVERSÕES ====
+[26/07/2025 15:42:11] 100.00 [USD] -> 546.00 [BRL] (Dólar Americano para Real Brasileiro)
+[26/07/2025 15:44:18] 250.00 [EUR] -> 29987.00 [JPY] (Euro para Iene Japonês)
 
 ```
 ## ▶️ Como executar o projeto
@@ -69,3 +81,14 @@ Digite o valor que deseja converter: 100
 1. Clone este repositório:
    ```bash
    git clone https://github.com/DeyvissonRobert/conversor_de_moedas-desafio
+
+2. Navegue até a pasta do projeto e compile:
+   ```bash
+   javac -cp .;gson-2.10.1.jar Principal.java
+  Obs: No macOS/Linux use : no lugar de ; no classpath
+
+3. Execute o programa:
+   ```bash
+   java -cp .;gson-2.10.1.jar Principal
+
+
