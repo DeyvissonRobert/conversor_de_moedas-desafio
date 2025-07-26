@@ -92,3 +92,12 @@ Digite o valor que deseja converter: 100
    java -cp .;gson-2.10.1.jar Principal
 
 
+## 🙏 Agradecimentos
+
+Agradeço à equipe da Alura e à iniciativa Oracle Next Education (ONE) pela oportunidade de aprendizado e crescimento.
+
+Este projeto foi um grande passo na minha evolução com Java, APIs e boas práticas de desenvolvimento.  
+Obrigado também a todos que dedicarem um tempo para ver, testar ou dar feedback sobre esse trabalho.
+
+📫 Fique à vontade para contribuir, sugerir melhorias ou entrar em contato!
+
